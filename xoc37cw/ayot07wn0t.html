@@ -110,6 +110,7 @@
     <button data-go="structures">Structure options</button>
     <button data-go="examples">Example structures</button>
     <button data-go="tips">Good to know</button>
+    <button data-go="annual">Yearly state filings</button>
     <button data-go="links">Helpful links</button>
   </div>
 </nav>
@@ -255,6 +256,114 @@
     <div class="card"><h3>One structure does not fit forever</h3><p>As your income, family, or properties change, your structure should too. We review it with you at least once a year as part of your planning.</p></div>
     <div class="card"><h3>Save every official letter</h3><p>Your IRS EIN letter, state approval, and any notices are the records banks, lenders, and the IRS ask for. Upload them to your secure portal so they are never lost.</p></div>
   </div>
+</section>
+
+<!-- Annual Filing Package Estimator for crystalclear-tax.com/llc-setup | built Nov 25, 2026 by Claudette
+     © 2026 Crystal Clear Endeavors LLC dba Crystal Clear Tax. All rights reserved. -->
+<section class="sec" id="annual">
+<div class="sec-head"><h2>Stay in good standing every year</h2></div>
+<p>Most states ask LLCs to file a yearly report, and many charge a yearly fee or franchise tax to keep the business active. Miss it, and the state can add penalties or even close the business on paper. We track your due date, prepare and file the report, pay the state fee for you, and send you the filed copy. <strong>Annual Filing Package: $197 a year, plus your state's fee.</strong></p>
+<div id="cct-af" style="max-width:640px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#24152e;line-height:1.5">
+  <style>
+    #cct-af .card{border:2px solid #5a2a82;border-radius:12px;padding:22px;background:#f3eafa}
+    #cct-af h2{color:#3d1a5b;margin:0 0 6px;font-size:24px}
+    #cct-af label{font-weight:bold;display:block;margin:14px 0 6px}
+    #cct-af select{width:100%;padding:12px;font-size:16px;border:1px solid #b9a2d3;border-radius:8px;background:#fff;color:#24152e}
+    #cct-af .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #e7dcef}
+    #cct-af .total{font-size:22px;font-weight:bold;color:#3d1a5b;border-bottom:none;padding-top:12px}
+    #cct-af .note{font-size:13px;color:#555;margin-top:10px}
+    #cct-af .btn{display:inline-block;margin-top:16px;padding:12px 20px;border-radius:8px;background:#e9dcf5;color:#3d1a5b;font-weight:bold;text-decoration:none;border:2px solid #5a2a82;cursor:pointer;font-size:15px}
+    #cct-af .none{background:#f1ebf8;border-radius:8px;padding:12px;margin-top:12px}
+    @media print{#cct-af .btn{display:none}}
+  </style>
+  <div class="card">
+    <h2>What will my yearly filing cost?</h2>
+    <p style="margin:0">Pick the state where your business is registered.</p>
+    <label for="cct-af-state">Your state</label>
+    <select id="cct-af-state"><option value="">Choose a state</option></select>
+    <div id="cct-af-out" style="margin-top:14px"></div>
+    <p class="note">State fees shown are what each state publishes for an LLC as of November 2026 and can change. We confirm the exact amount before we file. Corporations and other business types may have different fees.</p>
+    <a class="btn" href="https://www.crystalclear-tax.com/calendar" target="_blank" rel="noopener" style="margin-right:8px">Book a call to sign up</a>
+    <button class="btn" type="button" onclick="window.print()">Print this estimate</button>
+  </div>
+  <p style="font-size:11px;color:#666;text-align:center;margin-top:10px">&copy; 2026 Crystal Clear Endeavors LLC dba Crystal Clear Tax. All rights reserved.</p>
+</div>
+<script>
+(function(){
+  var SVC=197;
+  // [state fee, how often, note]. fee null = no state report required.
+  var D={
+  "Alabama":[50,"yearly","Business Privilege Tax. Based on the business's value; the $50 shown is the usual minimum, and some small LLCs owe nothing. We confirm your amount."],
+  "Alaska":[100,"every 2 years",""],
+  "Arizona":[null,"",""],
+  "Arkansas":[150,"yearly",""],
+  "California":[800,"yearly","$800 minimum yearly LLC tax, plus a $20 Statement of Information every 2 years. Larger LLCs may owe more."],
+  "Colorado":[25,"yearly",""],
+  "Connecticut":[80,"yearly",""],
+  "Delaware":[300,"yearly","Yearly LLC tax."],
+  "District of Columbia":[300,"every 2 years",""],
+  "Florida":[138.75,"yearly",""],
+  "Georgia":[50,"yearly","Online filing fee."],
+  "Hawaii":[15,"yearly",""],
+  "Idaho":[0,"yearly","A yearly report is required, but there's no state fee."],
+  "Illinois":[75,"yearly",""],
+  "Indiana":[32,"every 2 years","Online filing fee."],
+  "Iowa":[30,"every 2 years","Online filing fee."],
+  "Kansas":[90,"every 2 years","Online filing fee."],
+  "Kentucky":[15,"yearly",""],
+  "Louisiana":[35,"yearly","Online filing fee."],
+  "Maine":[85,"yearly",""],
+  "Maryland":[300,"yearly",""],
+  "Massachusetts":[500,"yearly",""],
+  "Michigan":[25,"yearly",""],
+  "Minnesota":[0,"yearly","A yearly renewal is required, but there's no state fee."],
+  "Mississippi":[0,"yearly","A yearly report is required, but there's no state fee."],
+  "Missouri":[null,"",""],
+  "Montana":[0,"yearly","A yearly report is required, but there's no state fee."],
+  "Nebraska":[10,"every 2 years",""],
+  "Nevada":[350,"yearly","$150 annual list plus $200 state business license."],
+  "New Hampshire":[102,"yearly",""],
+  "New Jersey":[75,"yearly",""],
+  "New Mexico":[null,"",""],
+  "New York":[9,"every 2 years",""],
+  "North Carolina":[203,"yearly","Online filing fee ($200 by mail)."],
+  "North Dakota":[50,"yearly",""],
+  "Ohio":[null,"",""],
+  "Oklahoma":[25,"yearly",""],
+  "Oregon":[100,"yearly",""],
+  "Pennsylvania":[7,"yearly",""],
+  "Rhode Island":[50,"yearly",""],
+  "South Carolina":[null,"","No yearly report for most LLCs. LLCs taxed as an S corporation file a yearly report; ask us about yours."],
+  "South Dakota":[55,"yearly","Online filing fee."],
+  "Tennessee":[300,"yearly","Minimum. Add $50 for each member over 6, up to $3,000."],
+  "Texas":[0,"yearly","A yearly franchise tax report is required. Most small LLCs owe no tax; we confirm yours."],
+  "Utah":[23,"yearly",""],
+  "Vermont":[45,"yearly",""],
+  "Virginia":[50,"yearly",""],
+  "Washington":[70,"yearly",""],
+  "West Virginia":[26,"yearly","Online filing fee."],
+  "Wisconsin":[25,"yearly",""],
+  "Wyoming":[60,"yearly","Minimum; based on the business's assets in Wyoming."]
+  };
+  var sel=document.getElementById('cct-af-state'), out=document.getElementById('cct-af-out');
+  Object.keys(D).sort().forEach(function(s){var o=document.createElement('option');o.value=s;o.textContent=s;sel.appendChild(o);});
+  function m(n){return '$'+n.toLocaleString('en-US',{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2});}
+  sel.addEventListener('change',function(){
+    var s=sel.value; if(!s){out.innerHTML='';return;}
+    var d=D[s], fee=d[0], freq=d[1], note=d[2];
+    if(fee===null){
+      out.innerHTML='<div class="none"><strong>Good news.</strong> '+s+' doesn\'t require a yearly report for most LLCs, so you likely don\'t need this package.'+(note?'<br><span class="note">'+note+'</span>':'')+'</div>';
+      return;
+    }
+    var h='<div class="row"><span>'+s+' state fee ('+freq+')</span><span>'+m(fee)+'</span></div>'+
+          '<div class="row"><span>Crystal Clear Tax filing service (yearly)</span><span>'+m(SVC)+'</span></div>'+
+          '<div class="row total"><span>Estimated total'+(freq==='every 2 years'?' in a year the report is due':' per year')+'</span><span>'+m(fee+SVC)+'</span></div>';
+    if(freq==='every 2 years') h+='<p class="note">In the years between reports, it\'s just the '+m(SVC)+' service, which covers tracking your due date and keeping your business in good standing.</p>';
+    if(note) h+='<p class="note">'+note+'</p>';
+    out.innerHTML=h;
+  });
+})();
+</script>
 </section>
 
 <section class="sec" id="links">
